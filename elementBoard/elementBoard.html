@@ -1,0 +1,66 @@
+<div>
+  <button type="action" name="act_character">Character</button>
+  <button type="action" name="act_journal">Journal</button>
+  <button type="action" name="act_configuration">Configuration</button>
+</div>
+
+<input
+  type="hidden"
+  class="sheet-fireToggle"
+  name="attr_sheetTab"
+  value="character"
+/>
+<input
+  type="hidden"
+  class="sheet-iceToggle"
+  name="attr_sheetTab"
+  value="character"
+/>
+<input
+  type="hidden"
+  class="sheet-earthToggle"
+  name="attr_sheetTab"
+  value="character"
+/>
+<input
+  type="hidden"
+  class="sheet-airToggle"
+  name="attr_sheetTab"
+  value="character"
+/>
+<input
+  type="hidden"
+  class="sheet-lightToggle"
+  name="attr_sheetTab"
+  value="character"
+/>
+<input
+  type="hidden"
+  class="sheet-darkToggle"
+  name="attr_sheetTab"
+  value="character"
+/>
+
+<div class="sheet-character">
+  <h2>Character</h2>
+  <span>character Stuff Goes here </span>
+</div>
+<div class="sheet-journal">
+  <h2>Journal/Notes</h2>
+  <span>Journal/Notes Stuff Goes here</span>
+</div>
+<div class="sheet-config">
+  <h2>Config/Settings</h2>
+  <span>Sheet Config/Settings goes here</span>
+</div>
+
+<script type="text/worker">
+  const buttonlist = ["character","journal","configuration"];
+  buttonlist.forEach(button => {
+      on(`clicked:${button}`, function() {
+          setAttrs({
+              sheetTab: button
+          });
+      });
+  });
+</script>

@@ -1,0 +1,13 @@
+/*Configure the tab buttons*/
+.sheet-character,
+.sheet-config,
+.sheet-journal {
+  display: none;
+}
+
+/* show the selected tab */
+.sheet-tabstoggle[value="character"] ~ div.sheet-character,
+.sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
+.sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
+  display: block;
+}
