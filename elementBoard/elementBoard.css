@@ -27,8 +27,8 @@
 }
 
 .sheet-iceToggle[value="iceInert"] ~ div.sheet-iceInert,
-.sheet-iceToggle[value="iceWaning"] ~ div.iceWaning,
-.sheet-iceToggle[value="iceStrong"] ~ div.iceStrong {
+.sheet-iceToggle[value="iceWaning"] ~ div.sheet-iceWaning,
+.sheet-iceToggle[value="iceStrong"] ~ div.sheet-iceStrong {
   display: block;
 }
 
