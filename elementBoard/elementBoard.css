@@ -1,19 +1,25 @@
-/*Configure the tab buttons*/
-.sheet-character,
-.sheet-config,
-.sheet-journal {
+.sheet-fireInert,
+.sheet-fireWaning,
+.sheet-fireStrong,
+.sheet-iceInert,
+.sheet-iceWaning,
+.sheet-iceStrong,
+.sheet-earthInert,
+.sheet-earthWaning,
+.sheet-earthStrong,
+.sheet-airInert,
+.sheet-airWaning,
+.sheet-airStrong,
+.sheet-lightInert,
+.sheet-lightWaning,
+.sheet-lightStrong,
+.sheet-darkInert,
+.sheet-darkWaning,
+.sheet-darkStrong {
   display: none;
 }
 
-/* show the selected tab */
-/* 
-.sheet-tabstoggle[value="character"] ~ div.sheet-character,
-.sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
-.sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
-  display: block;
-} 
-*/
-
+/*Show selected element status*/
 .sheet-fireToggle[value="fireInert"] ~ div.fireInert,
 .sheet-fireToggle[value="fireWaning"] ~ div.fireWaning,
 .sheet-fireToggle[value="fireStrong"] ~ div.fireStrong {
