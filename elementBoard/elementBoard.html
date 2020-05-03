@@ -1,65 +1,217 @@
-<div>
-  <button type="action" name="act_character">Character</button>
-  <button type="action" name="act_journal">Journal</button>
-  <button type="action" name="act_configuration">Configuration</button>
-</div>
-
 <input
   type="hidden"
   class="sheet-fireToggle"
   name="attr_sheetTab"
-  value="character"
+  value="inert"
 />
+
+<div class="sheet-fireInert">
+  <h2>Fire</h2>
+  <span>Inert </span>
+</div>
+<div class="sheet-fireWaning">
+  <h2>Fire</h2>
+  <span>Waning</span>
+</div>
+<div class="sheet-fireStrong">
+  <h2>Fire</h2>
+  <span>Strong</span>
+</div>
+
 <input
   type="hidden"
   class="sheet-iceToggle"
   name="attr_sheetTab"
-  value="character"
+  value="inert"
 />
+
+<div class="sheet-iceInert">
+  <h2>Ice</h2>
+  <span>Inert</span>
+</div>
+<div class="sheet-iceWaning">
+  <h2>Ice</h2>
+  <span>Waning</span>
+</div>
+<div class="sheet-iceStrong">
+  <h2>Ice</h2>
+  <span>Strong</span>
+</div>
+
 <input
   type="hidden"
   class="sheet-earthToggle"
   name="attr_sheetTab"
-  value="character"
+  value="inert"
 />
+
+<div class="sheet-earthInert">
+  <h2>Earth</h2>
+  <span>Inert</span>
+</div>
+<div class="sheet-earthWaning">
+  <h2>Earth</h2>
+  <span>Waning</span>
+</div>
+<div class="sheet-earthStrong">
+  <h2>Earth</h2>
+  <span>Strong</span>
+</div>
+
 <input
   type="hidden"
   class="sheet-airToggle"
   name="attr_sheetTab"
-  value="character"
+  value="inert"
 />
+
+<div class="sheet-airInert">
+  <h2>Air</h2>
+  <span>Inert</span>
+</div>
+<div class="sheet-airWaning">
+  <h2>Air</h2>
+  <span>Waning</span>
+</div>
+<div class="sheet-airStrong">
+  <h2>Air</h2>
+  <span>Strong</span>
+</div>
+
 <input
   type="hidden"
   class="sheet-lightToggle"
   name="attr_sheetTab"
-  value="character"
+  value="inert"
 />
+
+<div class="sheet-lightInert">
+  <h2>Light</h2>
+  <span>Inert</span>
+</div>
+<div class="sheet-lightWaning">
+  <h2>Light</h2>
+  <span>Waning</span>
+</div>
+<div class="sheet-lightStrong">
+  <h2>Light</h2>
+  <span>Strong</span>
+</div>
+
 <input
   type="hidden"
   class="sheet-darkToggle"
   name="attr_sheetTab"
-  value="character"
+  value="inert"
 />
 
-<div class="sheet-character">
-  <h2>Character</h2>
-  <span>character Stuff Goes here </span>
+<div class="sheet-darkInert">
+  <h2>Dark</h2>
+  <span>Inert</span>
 </div>
-<div class="sheet-journal">
-  <h2>Journal/Notes</h2>
-  <span>Journal/Notes Stuff Goes here</span>
+<div class="sheet-darkWaning">
+  <h2>Dark</h2>
+  <span>Waning</span>
 </div>
-<div class="sheet-config">
-  <h2>Config/Settings</h2>
-  <span>Sheet Config/Settings goes here</span>
+<div class="sheet-darkStrong">
+  <h2>Dark</h2>
+  <span>Strong</span>
+</div>
+
+<div>
+  <span>Fire</span>
+  <button type="action" name="act_fireInert">Inert</button>
+  <button type="action" name="act_fireWaning">Waning</button>
+  <button type="action" name="act_fireStrong">Strong</button>
+</div>
+
+<div>
+  <span>Ice</span>
+  <button type="action" name="act_iceInert">Inert</button>
+  <button type="action" name="act_iceWaning">Waning</button>
+  <button type="action" name="act_iceStrong">Strong</button>
+</div>
+
+<div>
+  <span>Earth</span>
+  <button type="action" name="act_earthInert">Inert</button>
+  <button type="action" name="act_earthWaning">Waning</button>
+  <button type="action" name="act_earthStrong">Strong</button>
+</div>
+
+<div>
+  <span>Air</span>
+  <button type="action" name="act_airInert">Inert</button>
+  <button type="action" name="act_airWaning">Waning</button>
+  <button type="action" name="act_airStrong">Strong</button>
+</div>
+
+<div>
+  <span>Light</span>
+  <button type="action" name="act_lightInert">Inert</button>
+  <button type="action" name="act_lightWaning">Waning</button>
+  <button type="action" name="act_lightStrong">Strong</button>
+</div>
+
+<div>
+  <span>Dark</span>
+  <button type="action" name="act_darkInert">Inert</button>
+  <button type="action" name="act_darkWaning">Waning</button>
+  <button type="action" name="act_darkStrong">Strong</button>
 </div>
 
 <script type="text/worker">
-  const buttonlist = ["character","journal","configuration"];
-  buttonlist.forEach(button => {
+  const fireButtonList = ["fireInert","fireWaning","fireStrong"];
+  const iceButtonList = ["iceInert","iceWaning","iceStrong"];
+  const earthButtonList = ["earthInert","earthWaning","earthStrong"];
+  const airButtonList = ["airInert","airWaning","airStrong"];
+  const lightButtonList = ["lightInert","lightWaning","lightStrong"];
+  const darkButtonList = ["darkInert","darkWaning","darkStrong"];
+
+  fireButtonList.forEach(button => {
       on(`clicked:${button}`, function() {
           setAttrs({
-              sheetTab: button
+              fireStatus: button
+          });
+      });
+  });
+
+  iceButtonList.forEach(button => {
+      on(`clicked:${button}`, function() {
+          setAttrs({
+              iceStatus: button
+          });
+      });
+  });
+
+  earthButtonList.forEach(button => {
+      on(`clicked:${button}`, function() {
+          setAttrs({
+              earthStatus: button
+          });
+      });
+  });
+
+  airButtonList.forEach(button => {
+      on(`clicked:${button}`, function() {
+          setAttrs({
+              airStatus: button
+          });
+      });
+  });
+
+  lightButtonList.forEach(button => {
+      on(`clicked:${button}`, function() {
+          setAttrs({
+              lightStatus: button
+          });
+      });
+  });
+
+  darkButtonList.forEach(button => {
+      on(`clicked:${button}`, function() {
+          setAttrs({
+              lightStatus: button
           });
       });
   });

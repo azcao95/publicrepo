@@ -6,8 +6,46 @@
 }
 
 /* show the selected tab */
+/* 
 .sheet-tabstoggle[value="character"] ~ div.sheet-character,
 .sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
 .sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
+  display: block;
+} 
+*/
+
+.sheet-fireToggle[value="fireInert"] ~ div.fireInert,
+.sheet-fireToggle[value="fireWaning"] ~ div.fireWaning,
+.sheet-fireToggle[value="fireStrong"] ~ div.fireStrong {
+  display: block;
+}
+
+.sheet-iceToggle[value="iceInert"] ~ div.iceInert,
+.sheet-iceToggle[value="iceWaning"] ~ div.iceWaning,
+.sheet-iceToggle[value="iceStrong"] ~ div.iceStrong {
+  display: block;
+}
+
+.sheet-earthToggle[value="earthInert"] ~ div.earthInert,
+.sheet-earthToggle[value="earthWaning"] ~ div.earthWaning,
+.sheet-earthToggle[value="earthStrong"] ~ div.earthStrong {
+  display: block;
+}
+
+.sheet-airToggle[value="airInert"] ~ div.airInert,
+.sheet-airToggle[value="airWaning"] ~ div.airWaning,
+.sheet-airToggle[value="airStrong"] ~ div.airStrong {
+  display: block;
+}
+
+.sheet-lightToggle[value="lightInert"] ~ div.lightInert,
+.sheet-lightToggle[value="lightWaning"] ~ div.lightWaning,
+.sheet-lightToggle[value="lightStrong"] ~ div.lightStrong {
+  display: block;
+}
+
+.sheet-darkToggle[value="darkInert"] ~ div.darkInert,
+.sheet-darkToggle[value="darkWaning"] ~ div.darkWaning,
+.sheet-darkToggle[value="darkStrong"] ~ div.darkStrong {
   display: block;
 }
