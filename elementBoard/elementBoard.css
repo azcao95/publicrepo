@@ -19,39 +19,76 @@
   display: none;
 }
 
+/*test*/
+.sheet-fireToggle[value="fireInert"] ~ div.sheet-fireInert,
+.sheet-fireToggle[value="fireWaning"] ~ div.sheet-fireWaning,
+.sheet-fireToggle[value="fireStrong"] ~ div.sheet-fireStrong {
+  display: block;
+}
+
+.sheet-iceToggle[value="iceInert"] ~ div.sheet-iceInert,
+.sheet-iceToggle[value="iceWaning"] ~ div.sheet-iceWaning,
+.sheet-iceToggle[value="iceStrong"] ~ div.sheet-iceStrong {
+  display: block;
+}
+
+.sheet-earthToggle[value="earthInert"] ~ div.sheet-earthInert,
+.sheet-earthToggle[value="earthWaning"] ~ div.sheet-earthWaning,
+.sheet-earthToggle[value="earthStrong"] ~ div.sheet-earthStrong {
+  display: block;
+}
+
+.sheet-airToggle[value="airInert"] ~ div.sheet-airInert,
+.sheet-airToggle[value="airWaning"] ~ div.sheet-airWaning,
+.sheet-airToggle[value="airStrong"] ~ div.sheet-airStrong {
+  display: block;
+}
+
+.sheet-lightToggle[value="lightInert"] ~ div.sheet-lightInert,
+.sheet-lightToggle[value="lightWaning"] ~ div.sheet-lightWaning,
+.sheet-lightToggle[value="lightStrong"] ~ div.sheet-lightStrong {
+  display: block;
+}
+
+.sheet-darkToggle[value="darkInert"] ~ div.sheet-darkInert,
+.sheet-darkToggle[value="darkWaning"] ~ div.sheet-darkWaning,
+.sheet-darkToggle[value="darkStrong"] ~ div.sheet-darkStrong {
+  display: block;
+}
+
 /*Show selected element status*/
-.sheet-fireToggle[value="fireInert"] ~ .sheet-fireInert,
-.sheet-fireToggle[value="fireWaning"] ~ .sheet-fireWaning,
-.sheet-fireToggle[value="fireStrong"] ~ .sheet-fireStrong {
-  display: block;
+.sheet-fireToggle[value="fireInert"] ~ tr.sheet-fireInert,
+.sheet-fireToggle[value="fireWaning"] ~ tr.sheet-fireWaning,
+.sheet-fireToggle[value="fireStrong"] ~ tr.sheet-fireStrong {
+  display: table-cell;
 }
 
-.sheet-iceToggle[value="iceInert"] ~ .sheet-iceInert,
-.sheet-iceToggle[value="iceWaning"] ~ .sheet-iceWaning,
-.sheet-iceToggle[value="iceStrong"] ~ .sheet-iceStrong {
-  display: block;
+.sheet-iceToggle[value="iceInert"] ~ tr.sheet-iceInert,
+.sheet-iceToggle[value="iceWaning"] ~ tr.sheet-iceWaning,
+.sheet-iceToggle[value="iceStrong"] ~ tr.sheet-iceStrong {
+  display: table-cell;
 }
 
-.sheet-earthToggle[value="earthInert"] ~ .sheet-earthInert,
-.sheet-earthToggle[value="earthWaning"] ~ .sheet-earthWaning,
-.sheet-earthToggle[value="earthStrong"] ~ .sheet-earthStrong {
-  display: block;
+.sheet-earthToggle[value="earthInert"] ~ tr.sheet-earthInert,
+.sheet-earthToggle[value="earthWaning"] ~ tr.sheet-earthWaning,
+.sheet-earthToggle[value="earthStrong"] ~ tr.sheet-earthStrong {
+  display: table-cell;
 }
 
-.sheet-airToggle[value="airInert"] ~ .sheet-airInert,
-.sheet-airToggle[value="airWaning"] ~ .sheet-airWaning,
-.sheet-airToggle[value="airStrong"] ~ .sheet-airStrong {
-  display: block;
+.sheet-airToggle[value="airInert"] ~ tr.sheet-airInert,
+.sheet-airToggle[value="airWaning"] ~ tr.sheet-airWaning,
+.sheet-airToggle[value="airStrong"] ~ tr.sheet-airStrong {
+  display: table-cell;
 }
 
-.sheet-lightToggle[value="lightInert"] ~ .sheet-lightInert,
-.sheet-lightToggle[value="lightWaning"] ~ .sheet-lightWaning,
-.sheet-lightToggle[value="lightStrong"] ~ .sheet-lightStrong {
-  display: block;
+.sheet-lightToggle[value="lightInert"] ~ tr.sheet-lightInert,
+.sheet-lightToggle[value="lightWaning"] ~ tr.sheet-lightWaning,
+.sheet-lightToggle[value="lightStrong"] ~ tr.sheet-lightStrong {
+  display: table-cell;
 }
 
-.sheet-darkToggle[value="darkInert"] ~ .sheet-darkInert,
-.sheet-darkToggle[value="darkWaning"] ~ .sheet-darkWaning,
-.sheet-darkToggle[value="darkStrong"] ~ .sheet-darkStrong {
-  display: block;
+.sheet-darkToggle[value="darkInert"] ~ tr.sheet-darkInert,
+.sheet-darkToggle[value="darkWaning"] ~ tr.sheet-darkWaning,
+.sheet-darkToggle[value="darkStrong"] ~ tr.sheet-darkStrong {
+  display: table-cell;
 }
