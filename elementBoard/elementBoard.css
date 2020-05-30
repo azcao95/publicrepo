@@ -60,35 +60,35 @@
 .sheet-fireToggle[value="fireInert"] ~ tr.sheet-fireInert,
 .sheet-fireToggle[value="fireWaning"] ~ tr.sheet-fireWaning,
 .sheet-fireToggle[value="fireStrong"] ~ tr.sheet-fireStrong {
-  display: table-cell;
+  display: table-cell !important;
 }
 
 .sheet-iceToggle[value="iceInert"] ~ tr.sheet-iceInert,
 .sheet-iceToggle[value="iceWaning"] ~ tr.sheet-iceWaning,
 .sheet-iceToggle[value="iceStrong"] ~ tr.sheet-iceStrong {
-  display: table-cell;
+  display: table-cell !important;
 }
 
 .sheet-earthToggle[value="earthInert"] ~ tr.sheet-earthInert,
 .sheet-earthToggle[value="earthWaning"] ~ tr.sheet-earthWaning,
 .sheet-earthToggle[value="earthStrong"] ~ tr.sheet-earthStrong {
-  display: table-cell;
+  display: table-cell !important;
 }
 
 .sheet-airToggle[value="airInert"] ~ tr.sheet-airInert,
 .sheet-airToggle[value="airWaning"] ~ tr.sheet-airWaning,
 .sheet-airToggle[value="airStrong"] ~ tr.sheet-airStrong {
-  display: table-cell;
+  display: table-cell !important;
 }
 
 .sheet-lightToggle[value="lightInert"] ~ tr.sheet-lightInert,
 .sheet-lightToggle[value="lightWaning"] ~ tr.sheet-lightWaning,
 .sheet-lightToggle[value="lightStrong"] ~ tr.sheet-lightStrong {
-  display: table-cell;
+  display: table-cell !important;
 }
 
 .sheet-darkToggle[value="darkInert"] ~ tr.sheet-darkInert,
 .sheet-darkToggle[value="darkWaning"] ~ tr.sheet-darkWaning,
 .sheet-darkToggle[value="darkStrong"] ~ tr.sheet-darkStrong {
-  display: table-cell;
+  display: table-cell !important;
 }
