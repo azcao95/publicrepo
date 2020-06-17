@@ -7,3 +7,13 @@
 ## elementBoard
 
 - Using Roll20 character sheet to create a element strength tracker for Roll20 online tabletop game
+
+## Reddit Clone
+
+- Used Ruby on Rails to build a reddit clone that supports creating accounts, creating communities, creating posts, and creating comments to learn the Ruby on Rails framework
+
+- Accounts supported by Devise
+
+- TODO: add upvote/downvote functionality, add ability to unsubscribe and delete comments or posts.
+
+- Made with the help of David Battersby Ruby tutorial: https://www.youtube.com/watch?v=aD6JvHKNPPM
