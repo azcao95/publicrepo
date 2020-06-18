@@ -1,0 +1,6 @@
+console.log("<%= @post.score %>");
+console.log("Upvotes: <%= @post.upvotes %>");
+console.log("Downvotes: <%= @post.downvotes %>");
+console.log(document.getElementById("score-<%= @post.id %>"));
+
+document.getElementById("score-<%= @post.id %>").innerHTML = "<%= @post.score %>";

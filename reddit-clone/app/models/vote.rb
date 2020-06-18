@@ -4,15 +4,16 @@ class Vote < ApplicationRecord
 
   validates_uniqueness_of :account_id, scope: :post_id
 
-  after_create :increment_upvote
-  after_craete :increment_downvote
-  after_destroy :decrement_upvote
+  after_create :increment_vote
+  after_destroy :decrement_vote
 
-  def increment_upvote
-    Post.find(self.post_id).increment(:upvotes).save
+  def increment_vote
+    field = self.upvote ? :upvotes : :downvotes
+    Post.find(self.post_id).increment(field).save
   end
 
-  def decrement_upvote
-    Post.find(self.post_id).decrement(:upvotes).save
+  def decrement_vote
+    field = self.upvote ? :upvotes : :downvotes
+    Post.find(self.post_id).decrement(field).save
   end
 end

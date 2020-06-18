@@ -14,6 +14,6 @@
 
 - Accounts supported by Devise
 
-- TODO: add upvote/downvote functionality, add ability to unsubscribe and delete comments or posts.
+- TODO: Add ability to unsubscribe and delete comments or posts. Various styling changes
 
 - Made with the help of David Battersby Ruby tutorial: https://www.youtube.com/watch?v=aD6JvHKNPPM

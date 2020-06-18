@@ -4,9 +4,8 @@ class CreateVotes < ActiveRecord::Migration[6.0]
       t.references :account
       t.references :post
       t.boolean :upvote
-      t.boolean :downvote
 
-      t.timestamp
+      t.timestamps
     end
   end
 end
