@@ -3,7 +3,7 @@ $(function () {
     let post_id = $(this).parent().data("id");
     let is_upvote = $(this).hasClass("upvote");
 
-    console.log("is an upvote? " + is_upvote);
+    // console.log("is an upvote? " + is_upvote);
 
     $.ajax({
       url: "/post/vote",

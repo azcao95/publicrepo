@@ -1,0 +1,53 @@
+<header id="header" class="row">
+  <div class="header-logo">
+    <a href="index.html">{{ navbar.blah }}</a>
+  </div>
+
+  <nav id="header-nav-wrap">
+    <ul class="header-main-nav">
+      <li>
+        <a
+          routerLink="/Home"
+          (click)="getActiveTab('home')"
+          [class.active]="activetab === 'home'"
+          >{{ navbar.home }}</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/Bio"
+          (click)="getActiveTab('bio')"
+          [class.active]="activetab === 'bio'"
+          >{{ navbar.bio }}</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/Experience"
+          (click)="getActiveTab('experience')"
+          [class.active]="activetab === 'home'"
+          >{{ navbar.experience }}</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/Skills"
+          (click)="getActiveTab('skills')"
+          [class.active]="activetab === 'home'"
+          >{{ navbar.skills }}</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/Download"
+          (click)="getActiveTab('download')"
+          [class.active]="activetab === 'home'"
+          >{{ navbar.download }}</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+</header>
+<!-- /header -->

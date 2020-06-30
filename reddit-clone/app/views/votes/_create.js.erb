@@ -1,6 +1,8 @@
-console.log("<%= @post.score %>");
-console.log("Upvotes: <%= @post.upvotes %>");
-console.log("Downvotes: <%= @post.downvotes %>");
-console.log(document.getElementById("score-<%= @post.id %>"));
+console.log("<%= @post.title %>");
+console.log("Is Upvoted: <%= is_upvoted @post %>");
+console.log("Is Downvoted: <%= is_downvoted @post %>");
 
-document.getElementById("score-<%= @post.id %>").innerHTML = "<%= @post.score %>";
+// document.getElementById("score-<%= @post.id %>").innerHTML = "<%= @post.score %>";
+// document.getElementsByClassName("vote-action-<%= @post.id %> .upvote").removeClass("active");
+
+$("#vote-actions-<%= @post.id %> .score").text("<%= @post.score %>");

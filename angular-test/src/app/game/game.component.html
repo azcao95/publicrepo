@@ -1,0 +1,29 @@
+<p>Player Score: {{ playerScore }}</p>
+
+<p>Computer Score: {{ cpuScore }}</p>
+
+<p>Your Selection: {{ selectionString }}</p>
+
+<div>
+  <button [disabled]="isSelectionLockedIn()" (click)="selectRock()">
+    <img src="../../assets/Rock-50.png" />
+  </button>
+  <button [disabled]="isSelectionLockedIn()" (click)="selectPaper()">
+    <img src="../../assets/Paper-50.png" />
+  </button>
+  <button [disabled]="isSelectionLockedIn()" (click)="selectScissors()">
+    <img src="../../assets/Scissors-50.png" />
+  </button>
+</div>
+
+<div>
+  <button [disabled]="isSubmitDisabled()" (click)="onClickSubmit()">
+    <img src="../../assets/Play-50.png" />
+  </button>
+</div>
+
+<div [hidden]="isResultHidden()">
+  <p>Computer Choice: {{ computerChoice }}</p>
+  <p>You {{ result }}!</p>
+  <button (click)="resetGame()">Play Again?</button>
+</div>
