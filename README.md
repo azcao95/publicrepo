@@ -22,9 +22,13 @@
 
 ## Angular Personal Site
 
-- Personal resume site made in Angular
+- Personal/business website using Angular made following this tutorial: https://www.youtube.com/watch?v=LYmJOdCuXrs&t=1s
 
-- Multi-tabbed pages with tabs for
+- Website contains multiple pages given with basic routing
+
+- Contains basic translation service to feed pages data
+
+- CSS template taken from dazzle: https://www.styleshout.com/free-templates/dazzle/
 
 ## Angular Rock Paper Scissors API application
 
