@@ -42,7 +42,7 @@
 
 ## Pitch Data Processor
 
-- Web application made in Django made to process uploaded PITCH data
+- Web application made in Django made to process uploaded PITCH data for job application process
 
 - PITCH processing according to the PITCH 1.4.1 specification found in the folder
 
