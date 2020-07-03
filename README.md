@@ -39,3 +39,11 @@
 - Then, from the app directory, run the application which will run on localhost:4200
 
 - Angular server as well as icons in assets made by recruiting devs
+
+## Pitch Data Processor
+
+- Web application made in Django made to process uploaded PITCH data
+
+- PITCH processing according to the PITCH 1.4.1 specification found in the folder
+
+- Users uploads PITCH data and web app shows number of Symbol Clears, Add Orders, Orders Executed, Cancel Orders, Trades, Trade Breaks, Trading Statuses, Auction Updates, Auction Summaries, and Retail Price Improvements
