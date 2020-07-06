@@ -16,7 +16,7 @@
 
 - Accounts supported by Devise
 
-- TODO: Add ability to unsubscribe and delete comments or posts. Various styling changes. Fix voting function.
+- TODO: Add ability to unsubscribe and delete comments or posts. Various styling changes. Fix voting function (currently broken).
 
 - Made with the help of David Battersby Ruby tutorial: https://www.youtube.com/watch?v=aD6JvHKNPPM
 
@@ -47,3 +47,11 @@
 - PITCH processing according to the PITCH 1.4.1 specification found in the folder
 
 - Users uploads PITCH data and web app shows number of Symbol Clears, Add Orders, Orders Executed, Cancel Orders, Trades, Trade Breaks, Trading Statuses, Auction Updates, Auction Summaries, and Retail Price Improvements
+
+## React Expense Tracker
+
+- Simple application that keeps track of income and expenses for learning hooks, rudimentary Context API, and Reducer
+
+- TODO: Add Node backend to persist sessions and improve user experiences
+
+- App made with instructions from following tutorial: https://www.youtube.com/watch?v=KyWaXA_NvT0
